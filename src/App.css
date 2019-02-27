@@ -1,0 +1,13 @@
+body {
+  background: url(./img/bg.jpg) no-repeat center/cover fixed;
+  opacity: 0.8;
+}
+
+form {
+  padding: 20px;
+  margin-top: 60px;
+}
+form button,
+form h5 {
+  margin: 20px 0;
+}
