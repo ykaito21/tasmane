@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
+import Dashboard from "./components/dashboard/Dashboard";
+import ProjectDetails from "./components/projects/ProjectDetails";
 import "./App.css";
 
 class App extends Component {
@@ -9,9 +11,10 @@ class App extends Component {
       <Router>
         <React.Fragment>
           <Navbar />
-          <div>
-            <h1>good</h1>
-          </div>
+          <Switch>
+            <Route exact path="/" component={Dashboard} />
+            <Route path="/projects/:id" component={ProjectDetails} />
+          </Switch>
         </React.Fragment>
       </Router>
     );

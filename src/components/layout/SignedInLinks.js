@@ -11,7 +11,7 @@ function SignedInLinks() {
         <NavLink to="/">Logout</NavLink>
       </li>
       <li>
-        <NavLink to="/" className="btn btn-floating pink lighten-1">
+        <NavLink to="/" className="btn btn-floating blue lighten-1">
           NN
         </NavLink>
       </li>
